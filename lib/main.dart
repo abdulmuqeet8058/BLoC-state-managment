@@ -1,9 +1,11 @@
 import 'package:bloc_stmgt/bloc/counter/counterBloc.dart';
 import 'package:bloc_stmgt/bloc/imagePicker/image_picker_bloc.dart';
+import 'package:bloc_stmgt/bloc/posts/post_bloc.dart';
 import 'package:bloc_stmgt/bloc/switch/switch_bloc.dart';
 import 'package:bloc_stmgt/bloc/todo/todo_bloc.dart';
 import 'package:bloc_stmgt/ui/counter_screen.dart';
 import 'package:bloc_stmgt/ui/image_picker_UI.dart';
+import 'package:bloc_stmgt/ui/posts_UI.dart';
 import 'package:bloc_stmgt/ui/switch_UI.dart';
 import 'package:bloc_stmgt/ui/todo_UI.dart';
 import 'package:bloc_stmgt/utils/imagePickerUtils.dart';
@@ -25,7 +27,8 @@ class MyApp extends StatelessWidget {
         BlocProvider(create: (_) => Counterbloc()),
         BlocProvider(create: (_) => SwitchBloc()),
         BlocProvider(create: (_) => ImagePickerBloc(Imagepickerutils())),
-        BlocProvider(create: (_) => TodoBloc())
+        BlocProvider(create: (_) => TodoBloc()),
+        BlocProvider(create: (_) => PostBloc())
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
@@ -34,7 +37,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: Todo(),
+        home: PostsScreen(),
       ),
     );
   }
