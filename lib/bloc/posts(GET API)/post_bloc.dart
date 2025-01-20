@@ -1,5 +1,5 @@
-import 'package:bloc_stmgt/bloc/posts/posts_events.dart';
-import 'package:bloc_stmgt/bloc/posts/posts_state.dart';
+import 'package:bloc_stmgt/bloc/posts(GET%20API)/posts_events.dart';
+import 'package:bloc_stmgt/bloc/posts(GET%20API)/posts_state.dart';
 import 'package:bloc_stmgt/model/post_model.dart';
 import 'package:bloc_stmgt/repository/post_repository.dart';
 import 'package:bloc_stmgt/utils/enums.dart';

@@ -1,6 +1,6 @@
-import 'package:bloc_stmgt/bloc/posts/post_bloc.dart';
-import 'package:bloc_stmgt/bloc/posts/posts_events.dart';
-import 'package:bloc_stmgt/bloc/posts/posts_state.dart';
+import 'package:bloc_stmgt/bloc/posts(GET%20API)/post_bloc.dart';
+import 'package:bloc_stmgt/bloc/posts(GET%20API)/posts_events.dart';
+import 'package:bloc_stmgt/bloc/posts(GET%20API)/posts_state.dart';
 import 'package:bloc_stmgt/utils/enums.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
